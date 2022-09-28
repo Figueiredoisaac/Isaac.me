@@ -1,0 +1,32 @@
+.container-perfil{
+
+}
+
+.container-projetos{
+    display: flex;
+}
+
+.projeto {
+    padding: 10px;
+
+}
+
+.projeto h3 {
+    color: blue;
+}
+
+.container-formacao{
+
+}
+
+.container-certificados{
+
+}
+
+.container-experiecias{
+
+}
+
+.container-competencias{
+
+}
