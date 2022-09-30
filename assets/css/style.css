@@ -1,14 +1,38 @@
 .container-perfil{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container-perfil-titulo{
+    
+}
+.container-foto-perfil{
+    border-radius: 50%;
+    border-style: double;
+    position: absolute;
+}
 
+.foto-perfil{
+    position: relative;
+    max-width: 100px;
+    max-height: 150px;
+}
+
+.container-perfil-info{
+    display: none;
 }
 
 .container-projetos{
-    display: flex;
+    display: block;
 }
 
 .projeto {
     padding: 10px;
 
+}
+.projeto-descricao{
+    display: none;
 }
 
 .projeto h3 {
@@ -29,4 +53,8 @@
 
 .container-competencias{
 
+}
+
+.contatos {
+    display: flex;
 }
