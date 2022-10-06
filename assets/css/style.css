@@ -1,54 +1,109 @@
+
+
 body{
 background-color: coral;
+font-family: sans-serif;
 }
-
+.container{
+    display: flex;
+    align-items: center;
+}
 .container-perfil{
     
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: crimson;
+    width: 33%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
-    border-radius: 2rem;
-    background-color: crimson;
-    max-width: 50%;
-    max-height: 50%;
-    margin-left: 25%;
-    margin-top: 2rem;
+    overflow: hidden;
+    top: 0;
+    z-index: 1;
+
 }
 .container-perfil-titulo{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
+
 }
-.container-perfil-titulo h1,.container-perfil-titulo h2{
-    font-size: 1rem;
+#nome{
+    font-size: 16px;
+    text-align: center;
     font-weight: 700;
-    padding: 10px;
     color: white;
+    margin: 20px 20px 0 20px;
+}
+#funcao{
+    font-size: 8px ;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+
 }
 .container-foto-perfil{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     border-radius: 50%;
-    border-style: solid;
     overflow: hidden;
-    max-width: 150px;
-    max-height: 150px;
-    margin: 1rem;
+    width: 110px;
+    height: 110px;
 }
 
 .foto-perfil{
-    max-width: 150px;
+    width: 120%;
 }
 
 .container-perfil-info{
-    display: none;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
+.contatos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.container-rede-social{
+    margin: 5%;
+}
+.icon{
+    width: 25px;
+    height: 25px;
+}
 .container-projetos{
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
-
+.menu {
+    display: flex;
+    position: absolute;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    top: 0;
+    right: 0;
+    margin: 0;
+    background-color: aliceblue;
+}
+.menu-item{
+    font-weight: 700;
+    font-size: 14px;
+    padding: 8px;
+}
 .projeto {
     padding: 10px;
 
@@ -77,6 +132,48 @@ background-color: coral;
 
 }
 
-.contatos {
-    display: flex;
+
+@media screen and (min-width: 1024px)  {
+
+    .container-perfil{
+    
+        width: max-content;
+        height: 100vh;
+    
+    }
+    .container-perfil-titulo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    #nome{
+        margin-top: 5%;
+        font-size: 16px;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 20px;
+    }
+    #funcao{
+        font-size: 12px ;
+        padding: 10px 0;
+    
+    }
+    .container-foto-perfil{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 100px;
+        height: 100px;
+    }
+
+    .foto-perfil{
+        width: 130px;
+    }
+    
 }
