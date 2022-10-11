@@ -7,13 +7,15 @@ font-family: sans-serif;
 .container{
     display: flex;
     align-items: center;
+    position: absolute;
+    width: 100vw;
 }
 .container-perfil{
     
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
     background-color: crimson;
-    width: 33%;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -21,7 +23,13 @@ font-family: sans-serif;
     align-items: center;
     overflow: hidden;
     z-index: 1;
+    position: relative;
+    left: -40%;
 
+}
+
+.container-perfil:hover{
+    left:0px;
 }
 .container-perfil-titulo{
     display: flex;
@@ -102,13 +110,14 @@ font-family: sans-serif;
 .container-main{
     display: flex;
     flex-direction: column;
+    width: 100vw;
 }
 .menu {
     display: flex;
     position: absolute;
     justify-content: right;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 3rem;
     top: 0;
     right: 0;
@@ -130,8 +139,15 @@ font-family: sans-serif;
     text-decoration: none;
     color: brown;
 }
+.projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
 .projeto {
     padding: 10px;
+
 
 }
 .projeto-descricao{
@@ -160,15 +176,30 @@ font-family: sans-serif;
 
 @media screen and (min-width: 475px) {
     .container-perfil{
-        width: 25%;
+        width: 40%;
+        left: -25%;
+    }
+    .container-foto-perfil{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 150px;
+        height: 150px;
+    }
+    .foto-perfil{
+        width: 120%;
     }
 }
 @media screen and (min-width: 1024px)  {
 
     .container-perfil{
     
-        width: 20%;
-        height: 100vh;
+        width: 18%;
+        left: -13%;
     
     }
     .container-perfil-titulo{
